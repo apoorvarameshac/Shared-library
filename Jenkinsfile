@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "vamsi011/java-app"
+        IMAGE_NAME = "apoorva/java-app"
         TAG        = "${BUILD_NUMBER}"
         FULL_IMAGE = "${IMAGE_NAME}:${TAG}"
     }
@@ -27,6 +27,7 @@ pipeline {
         }
     }
 }
+
 
 
 
