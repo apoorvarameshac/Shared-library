@@ -21,12 +21,13 @@ pipeline {
         stage('Deploy container') {
             steps {
                 script {
-                    dockerUtil.deployContainer(env.FULL_IMAGE, "8084:8081")
+                    dockerUtil.deployContainer(env.FULL_IMAGE, "8085:8081")
                 }
             }
         }
     }
 }
+
 
 
 
